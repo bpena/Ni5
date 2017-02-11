@@ -1,0 +1,16 @@
+<ni5-panel>
+  <!--<md-tab-group class="flex tabbed-pane" (selectChange)="selectedTab($event)">-->
+  <md-tab-group class="flex tabbed-pane" (selectChange)="selectedTab($event)">
+    <md-tab *ngFor="let tab of tabs; let i=index" >
+      <template md-tab-label>{{tab.name}}</template>
+      <grid [data]="tabGridData[i]" [columns]="tabGridColumnsLimited[i]"
+            [selectionMode]="'multi'" [showIcon]="true"
+            (clicked)="onClicked($event)" (over)="onMouseover($event)"
+            (selected)="onSelected($event)" (selectedAll)="onSelectedAll($event)"
+            (deselected)="onDeselected($event)" (deselectedAll)="onDeselectedAll($event)"></grid>
+      <!--<div style="text-align: center;" *ngIf="tabGridData[i].length == 0">-->
+      <!--<br><h3>No results found</h3>-->
+      <!--</div>-->
+    </md-tab>
+  </md-tab-group>
+</ni5-panel>

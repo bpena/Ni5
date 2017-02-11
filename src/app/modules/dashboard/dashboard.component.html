@@ -1,0 +1,94 @@
+<md-toolbar>
+  <button id="app-menu" md-icon-button (click)="left.toggle()">
+    <md-icon>menu</md-icon>
+  </button>
+  <span class="toolbar-logo">NI5 NAVIGATOR</span>
+  <div class="flex">
+    <ni5-search *ngIf="showToolbarFilter"></ni5-search>
+  </div>
+  <button md-icon-button *ngIf="showToolbarFilter" (click)="right.toggle()">
+    <md-icon>filter_list</md-icon>
+  </button>
+  <navigator-buttons *ngIf="showToolbarFilter"></navigator-buttons>
+
+  <!--<button md-icon-button class="md-icon-button" aria-label="Favorite">
+  <md-icon>favorite</md-icon>
+  </button>
+  <div class="avatar-dropdown" id="icon">
+  <span class="user-name">{{username}}</span>
+  <img src="/commons/images/foto.jpg" class="md-avatar" />
+  </div>
+  <dropdown [values]="dropdownValues" (select)="action($event.value)"></dropdown>
+  <button md-icon-button class="md-icon-button md-toolbar-last-icon" aria-label="More">
+  <md-icon>more_vert</md-icon>
+  </button>-->
+</md-toolbar>
+
+<md-sidenav-layout class="row-flex">
+  <md-sidenav #left mode="over" layout-padding >
+    <md-toolbar>MENU</md-toolbar>
+
+    <!-- Sidebar navigation -->
+    <ul class="nav sidebar-nav">
+      <li>
+        <a href="#" (click)="changeView('Dashboard')">
+          <md-icon>dashboard</md-icon> Dashboard
+        </a>
+      </li>
+      <!--<li class="divider"></li>-->
+      <li>
+        <a href="#" (click)="changeView('Navigator')">
+          <md-icon>explore</md-icon> Navigator
+        </a>
+      </li>
+      <!--<li class="divider"></li>-->
+      <li>
+        <a href="#" (click)="changeView('Export data')">
+          <md-icon>open_in_new</md-icon> Export...
+        </a>
+      </li>
+      <!--<li class="divider"></li>-->
+      <li>
+        <a href="#" (click)="logout()">
+          <md-icon>exit_to_app</md-icon> Logout
+        </a>
+      </li>
+      <!--<li class="dropdown">
+          <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+              All Mail
+              <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+              <li>
+                  <a href="#" tabindex="-1">
+                      Social
+                      <span class="sidebar-badge">12</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" tabindex="-1">
+                      Promo
+                      <span class="sidebar-badge">0</span>
+                  </a>
+              </li>
+          </ul>
+      </li>-->
+    </ul>
+    <!-- Sidebar divider -->
+    <!-- <div class="sidebar-divider"></div> -->
+
+    <!-- Sidebar text -->
+    <!--  <div class="sidebar-text">Text</div> -->
+  </md-sidenav>
+  <md-sidenav #right align="end" mode="side" layout-padding >
+    <md-toolbar>
+      <span>FILTER</span>
+      <div class="flex"></div>
+      <button md-icon-button (click)="right.toggle()">
+        <md-icon class="md-14">remove</md-icon>
+      </button>
+    </md-toolbar>
+    <ni5-filter class="column-flex"></ni5-filter>
+  </md-sidenav>
+  <router-outlet></router-outlet>
+</md-sidenav-layout>

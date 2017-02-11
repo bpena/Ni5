@@ -1,0 +1,12 @@
+ni5-search {
+  padding-top: 10px;
+}
+
+ni5-search button {
+  margin-top: 9px !important;
+}
+
+ni5-search form md-input {
+  flex: 1;
+  margin-left: 10px;
+}

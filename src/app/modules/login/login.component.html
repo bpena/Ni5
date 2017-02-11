@@ -1,0 +1,16 @@
+<md-card class="column-flex">
+  <md-toolbar>
+    NI5 NAVIGATOR
+  </md-toolbar>
+  <md-card-content>
+    <form class="column-flex">
+      <md-input placeholder="username" [(ngModel)]="username" name="username"
+                (focus)="cleanErrorMsg()" (keydown)="cleanErrorMsg()"></md-input>
+      <md-input placeholder="password" [(ngModel)]="password" name="password" type="password"
+                (focus)="cleanErrorMsg()" (keydown)="cleanErrorMsg()" ></md-input>
+      <button md-raised-button color="primary" (click)="login()"
+              (focus)="cleanErrorMsg()">Login</button>
+      <label class="errorLogin">{{errorMsg}}</label>
+    </form>
+  </md-card-content>
+</md-card>

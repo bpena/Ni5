@@ -1,0 +1,115 @@
+.dashboard md-toolbar {
+  background-color: #00021c;
+  color: whitesmoke;
+  min-height: 50px;
+  max-height: 50px;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.dashboard > md-toolbar md-toolbar-row {
+  height: 50px;
+  padding-left: 15px;
+}
+
+.dashboard .toolbar-logo {
+  background: transparent no-repeat url(commons/images/logo.png);
+  background-position-y: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  color: whitesmoke;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-top: 3px;
+  line-height: 22px;
+  margin-left: 9px;
+}
+
+.dashboard md-toolbar button {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+
+.dashboard md-sidenav-layout {
+  background: transparent;
+  display: flex !important;
+}
+
+.dashboard md-sidenav-layout > .md-sidenav-backdrop.md-sidenav-shown {
+  background-color: transparent !important;
+}
+
+.dashboard md-sidenav-layout md-sidenav {
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 250px;
+  overflow-y: hidden;
+  padding: 0 10px 0 0;
+}
+.dashboard md-sidenav-layout md-sidenav md-toolbar {
+  background-color: #23253c;
+  height: 30px;
+  max-height: 30px;
+  min-height: 30px;
+}
+.dashboard md-sidenav-layout md-sidenav md-toolbar md-toolbar-row {
+  height: 30px !important;
+}
+
+.dashboard md-sidenav-layout md-sidenav .sidebar-nav {
+  background: whitesmoke;
+  box-shadow: 1px 0 10px #000000 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard md-sidenav-layout md-sidenav .sidebar-nav li > a {
+  color: #464646;
+  background-color: transparent;
+}
+
+.dashboard md-sidenav-layout md-sidenav .sidebar-nav li a {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 56px 0 16px;
+  text-decoration: none;
+  clear: both;
+  font-weight: 600;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.dashboard md-sidenav-layout md-sidenav .material-icons {
+  position: inherit;
+  top: 5px;
+}
+
+.dashboard .md-sidenav-end {
+  background-color: whitesmoke;
+  padding: 0;
+}
+
+.dashboard > md-sidenav-layout .md-sidenav-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: initial;
+}

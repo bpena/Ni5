@@ -1,0 +1,11 @@
+<button md-icon-button (click)="onClick()">
+  <md-icon class="md-14">device_hub</md-icon>
+  <md-icon class="md-14">{{visible ? 'arrow_drop_up' : 'arrow_drop_down'}}</md-icon>
+</button>
+<md-radio-group class="dropdown-schema radio-group-left"
+                *ngIf="visible" [(value)]="selectedSchema">
+  <span class="title">Schema</span>
+  <md-radio-button *ngFor="let value of values" [value]="value.id" class="radio radio-left" (click)="selectItem(value)">
+    {{value.name}}<br>
+  </md-radio-button>
+</md-radio-group>

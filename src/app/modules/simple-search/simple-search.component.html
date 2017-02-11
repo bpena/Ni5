@@ -1,0 +1,26 @@
+<md-card class="simple-search-form">
+  <md-card-content>
+    <div class="row-flex">
+      <button md-icon-button (click)="visible = !visible" class="schema-selector-button">
+        <md-icon>device_hub</md-icon>
+        <md-icon>{{visible ? 'arrow_drop_up' : 'arrow_drop_down'}}</md-icon>
+      </button>
+      <div class="row-flex" >
+        <md-input placeholder="Enter your search here" class="flex" [(ngModel)]="criteria" (keydown.Enter)="onSearch()"></md-input>
+        <button md-icon-button (click)="onSearch()">
+          <md-icon class="md-14">search</md-icon>
+          <!--<md-icon class="md-14">arrow_drop_down</md-icon>-->
+        </button>
+        <!--<i class="material-icons search-icon">star_border</i>-->
+        <!--<i class="material-icons search-icon">arrow_drop_down</i>-->
+      </div>
+    </div>
+    <span class="schema-selector-title" *ngIf="visible">SCHEMA</span>
+    <md-radio-group *ngIf="visible" class="radio-group-left white-radio" [(value)] ="selectedSchemaId">
+      <md-radio-button *ngFor="let value of schemaList" class="radio-left"
+                       (click)="onSchemaSelected(value)" [value]="value.id">
+        {{value.name}}<br />
+      </md-radio-button>
+    </md-radio-group>
+  </md-card-content>
+</md-card>

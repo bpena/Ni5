@@ -1,0 +1,48 @@
+<div class="column-flex">
+  <!--
+  <div class="filter-header">
+      <md-checkbox [checked]="true" align="end">
+          No Orphans
+      </md-checkbox>
+      <md-checkbox [checked]="false" align="end">
+          No Unrelat
+      </md-checkbox>
+      <md-checkbox [checked]="false" align="end">
+          No Focus
+      </md-checkbox>
+      <div class="flex" style="max-width: 45%"></div>
+  </div>
+  -->
+  <article class="column-flex accordion {{sizeClass[definitions.length]}}">
+
+    <section *ngFor="let definition of definitions; let i = index;"
+             id="acc{{i}}" [class]="classAcc[i]">
+      <h2><a (click)="toggle(i)">{{definition.name}}{{definition.node ? '' : ' Edge'}}</a></h2>
+      <div class="container">
+        <div class="group-container" *ngFor="let attribute of definition.attributes">
+          <div class="column-flex">
+            <div class="group-header {{classSubGroupContainer[attribute.id] ? 'open' : 'close'}}">
+              <md-checkbox [checked]="getChecked(definition.__id, attribute.id)"
+                           [indeterminate]="getIndeterminate(definition.__id, attribute.id)"
+                           (change)="toggleValues(definition.__id, attribute.id)">
+                {{attribute.label}}
+              </md-checkbox>
+              <div class="flex"></div>
+              <button md-icon-button  class="ml-30" (click)="toggleSG(attribute.id)">
+                <md-icon class="md-14">{{classSubGroupContainer[attribute.__id] ? 'arrow_drop_up' : 'arrow_drop_down'}}</md-icon>
+              </button>
+            </div>
+
+            <div class="subgroup-container column-flex {{classSubGroupContainer[attribute.id] ? 'open' : 'close'}}">
+              <md-checkbox class="radio" *ngFor="let value of attribute.values" align="end"
+                           [checked]="values[definition.__id][attribute.id][value.id]"
+                           (change)="toggleValue(definition.__id, attribute.id, value.id)">
+                {{value.label}}
+              </md-checkbox>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</div>

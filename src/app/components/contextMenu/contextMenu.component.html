@@ -1,0 +1,12 @@
+<button md-icon-button (click)="expanded = !expanded" class="more-btn {{expanded ? 'expanded' : ''}}">
+  <md-icon>more_vert</md-icon>
+</button>
+<ul class="menu-list" *ngIf="expanded">
+  <li *ngFor="let value of values" class="menu-{{value.type}}">
+    <md-slide-toggle *ngIf="value.toggle" [(ngModel)]="value.toggleValue"
+                     (change)="onChange($event, value)" color="primary">
+      {{value.label}}
+    </md-slide-toggle>
+    <span *ngIf="!value.toggle" (click)="onClick(value);">{{value.label}}</span>
+  </li>
+</ul>

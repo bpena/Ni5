@@ -1,0 +1,21 @@
+map-display .leaflet-tooltip {
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 0;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 6px;
+}
+
+map-display .leaflet-tooltip-bottom {
+  margin-top: 0;
+}
+
+map-display .leaflet-tooltip-bottom:before {
+  border: none;
+}
+
+map-display .filtered {
+  display: none !important;
+}

@@ -1,0 +1,8 @@
+<ni5-panel title="node detail" [menuOptions]="menuOptions">
+  <div class="detail-container">
+    <div class="row-flex row-detail" *ngFor="let attribute of dataDetail">
+      <label class="label-detail">{{attribute.label}}</label>
+      <label class="value-detail" [innerHTML]="attribute.value"></label>
+    </div>
+  </div>
+</ni5-panel>

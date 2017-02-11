@@ -1,0 +1,10 @@
+navigator-buttons .nav-button {
+  background-color: #1b1d33;
+  color: whitesmoke;
+  font-size: 12px;
+  text-transform: uppercase;
+  min-width: 125px;
+}
+navigator-buttons .checked {
+  background-color: #02569c;
+}

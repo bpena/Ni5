@@ -1,0 +1,21 @@
+.login-form md-card {
+  background: RGBA(0,0,0,0.75);
+  width: 225px;
+}
+.login-form md-toolbar {
+  background: transparent no-repeat url("assets/images/logo.png");
+  background-position-y: center;
+  color: gainsboro;
+  font-size: 18px;
+  padding-left: 45px;
+}
+.login-form form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.login-form .errorLogin {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}

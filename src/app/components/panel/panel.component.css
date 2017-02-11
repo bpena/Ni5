@@ -1,0 +1,29 @@
+ni5-panel md-card {
+  background: white;
+  padding: 0;
+
+}
+ni5-panel .panel-header {
+  background-color: #02569c;
+  height: 30px;
+  max-height: 30px;
+  min-height: 30px;
+}
+
+ni5-panel md-toolbar-row {
+  height: 30px;
+}
+ni5-panel .panel-title {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+ni5-panel .panel-icon-right {
+  position: absolute !important;
+  right: 0;
+  top: -2px;
+  z-index: 1000;
+  color: whitesmoke !important;
+}
+ni5-panel .panel-icon-right .more-btn {
+  width: 20px !important;
+}

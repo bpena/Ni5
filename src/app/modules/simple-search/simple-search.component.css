@@ -1,0 +1,75 @@
+simple-search {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+simple-search .simple-search-form {
+  background: rgba(0,0,0,0.75);
+  min-width: 500px;
+  max-width: 500px;
+  padding: 60px 80px;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+simple-search .simple-search-form md-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+simple-search .simple-search-form md-card-content {
+
+}
+
+simple-search .md-button-wrapper md-icon {
+  width: 15px;
+}
+
+simple-search button {
+  margin-top: 9px !important;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+simple-search md-input {
+  margin-left: 10px;
+}
+
+simple-search .schema-selector-title {
+  color: white;
+  display: block;
+  flex: 1;
+  background-color: rgba(22, 25, 44, .60);
+  padding: 5px 80px;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+simple-search .radio-group-left {
+  display: flex;
+  flex-direction: column;
+}
+simple-search .radio-left {
+  display: flex !important;
+}
+simple-search .md-radio-container,
+simple-search .md-radio-outer-circle,
+simple-search .md-radio-inner-circle {
+  height: 15px !important;
+  width: 15px !important;
+}
+
+simple-search .white-radio .md-radio-outer-circle,
+simple-search .white-radio .md-radio-inner-circle {
+  border-color: #FFFFFF !important;
+}
+
+simple-search .white-radio .md-radio-inner-circle {
+  background-color: #FFFFFF !important;
+}

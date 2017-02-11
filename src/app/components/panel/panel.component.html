@@ -1,0 +1,12 @@
+<md-card class="flex-important column-flex panel-card" style="position: relative;">
+  <md-toolbar class="md-toolbar panel-header">
+    <div class="flex"><span class="panel-title">{{title}}</span></div>
+    <div class="panel-icon-right">
+      <context-menu class="more-btn" [values]="menuOptions" [hidden]="!(showMenu)"></context-menu>
+      <button md-icon-button [hidden]="!(showMaximize)">
+        <md-icon>fullscreen</md-icon>
+      </button>
+    </div>
+  </md-toolbar>
+  <ng-content></ng-content>
+</md-card>

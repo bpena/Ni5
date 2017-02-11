@@ -1,0 +1,6 @@
+<ni5-panel title="Graph Display" [menuOptions]="menuOptions" [showMenu]="true">
+  <graph-component
+    (expandNode)="expandNode($event)" (collapseNode)="collapseNode($event)"
+    [ngClass]="graphClass.join(' ')" (clicked)="onClicked($event)"
+    [nodes]="nodes" [links]="links"></graph-component>
+</ni5-panel>

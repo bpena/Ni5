@@ -1,0 +1,13 @@
+<schema-selector (select)="updateSchema($event)" class="black-radio"></schema-selector>
+<form class="row-flex" (ngSubmit)="onSearch()">
+  <md-input [(ngModel)]="criteria" name="criteria"></md-input>
+  <button md-icon-button type="submit" (click)="onSearch()">
+    <md-icon class="md-14">search</md-icon>
+    <!--<md-icon class="md-14">arrow_drop_down</md-icon>-->
+  </button>
+  <!--<button class="ml-40" md-icon-button (click)="right.toggle()">
+      <md-icon class="md-24">filter_list</md-icon>
+  </button>-->
+  <!--<i class="material-icons search-icon">star_border</i>-->
+  <!--<i class="material-icons search-icon">arrow_drop_down</i>-->
+</form>

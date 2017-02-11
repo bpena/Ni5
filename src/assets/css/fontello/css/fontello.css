@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?95067235');
+  src: url('../font/fontello.eot?95067235#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?95067235') format('woff2'),
+       url('../font/fontello.woff?95067235') format('woff'),
+       url('../font/fontello.ttf?95067235') format('truetype'),
+       url('../font/fontello.svg?95067235#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?95067235#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  /*width: 1em;*/
+  width: 24px;
+  /*margin-right: .2em;*/
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  /*line-height: 1em;*/
+  line-height: 24px;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /*margin-left: .2em;*/
+  margin-left: 0;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  font-size: 24px;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-government_a:before { content: '\e800'; } /* '' */
+.icon-health_economist:before { content: '\e801'; } /* '' */
+.icon-hospc:before { content: '\e802'; } /* '' */
+.icon-hospd:before { content: '\e803'; } /* '' */
+.icon-hospital:before { content: '\e804'; } /* '' */
+.icon-hospital_a:before { content: '\e805'; } /* '' */
+.icon-hta:before { content: '\e806'; } /* '' */
+.icon-iassociation4:before { content: '\e807'; } /* '' */
+.icon-iboard1:before { content: '\e808'; } /* '' */
+.icon-icarenetwork1:before { content: '\e809'; } /* '' */
+.icon-icon_publikation_2:before { content: '\e80a'; } /* '' */
+.icon-ihcn_a:before { content: '\e80b'; } /* '' */
+.icon-ihn_c:before { content: '\e80c'; } /* '' */
+.icon-ihn_d:before { content: '\e80d'; } /* '' */
+.icon-iinstitution:before { content: '\e80e'; } /* '' */
+.icon-insurance:before { content: '\e80f'; } /* '' */
+.icon-ipharmacy:before { content: '\e810'; } /* '' */
+.icon-ipharmacy4:before { content: '\e811'; } /* '' */
+.icon-journal_2:before { content: '\e812'; } /* '' */
+.icon-journalist:before { content: '\e813'; } /* '' */
+.icon-meeting3:before { content: '\e814'; } /* '' */
+.icon-ngo:before { content: '\e815'; } /* '' */
+.icon-ngo_a:before { content: '\e816'; } /* '' */
+.icon-ngo_c:before { content: '\e817'; } /* '' */
+.icon-ngo_d:before { content: '\e818'; } /* '' */
+.icon-nurse:before { content: '\e819'; } /* '' */
+.icon-other:before { content: '\e81a'; } /* '' */
+.icon-other_healthcare_professional:before { content: '\e81b'; } /* '' */
+.icon-otherc:before { content: '\e81c'; } /* '' */
+.icon-otherd:before { content: '\e81d'; } /* '' */
+.icon-otherorg:before { content: '\e81e'; } /* '' */
+.icon-patient-consumer:before { content: '\e81f'; } /* '' */
+.icon-pfizer_a2:before { content: '\e820'; } /* '' */
+.icon-pfizer_d2:before { content: '\e821'; } /* '' */
+.icon-pfizer_new_logo:before { content: '\e822'; } /* '' */
+.icon-pfizerc2:before { content: '\e823'; } /* '' */
+.icon-pharmacist:before { content: '\e824'; } /* '' */
+.icon-pharmacy:before { content: '\e825'; } /* '' */
+.icon-pharmacy_a:before { content: '\e826'; } /* '' */
+.icon-pharmacyc:before { content: '\e827'; } /* '' */
+.icon-pharmacyd:before { content: '\e828'; } /* '' */
+.icon-phct:before { content: '\e829'; } /* '' */
+.icon-phct_c:before { content: '\e82a'; } /* '' */
+.icon-phct_d:before { content: '\e82b'; } /* '' */
+.icon-pht_a:before { content: '\e82c'; } /* '' */
+.icon-physician:before { content: '\e82d'; } /* '' */
+.icon-policy_analyst:before { content: '\e82e'; } /* '' */
+.icon-politician:before { content: '\e82f'; } /* '' */
+.icon-private_hc_a:before { content: '\e830'; } /* '' */
+.icon-private_payor_a:before { content: '\e831'; } /* '' */
+.icon-private_payord:before { content: '\e832'; } /* '' */
+.icon-privatehc:before { content: '\e833'; } /* '' */
+.icon-privatehc_c:before { content: '\e834'; } /* '' */
+.icon-privatehc_d:before { content: '\e835'; } /* '' */
+.icon-privatepayorc:before { content: '\e836'; } /* '' */
+.icon-public_speaking:before { content: '\e837'; } /* '' */
+.icon-publication:before { content: '\e838'; } /* '' */
+.icon-publication_2:before { content: '\e839'; } /* '' */
+.icon-regulatory_body_a:before { content: '\e83a'; } /* '' */
+.icon-regulatorybody:before { content: '\e83b'; } /* '' */
+.icon-regulatorybodyc:before { content: '\e83c'; } /* '' */
+.icon-regulatorybodyd:before { content: '\e83d'; } /* '' */
+.icon-research:before { content: '\e83e'; } /* '' */
+.icon-research_institute_a:before { content: '\e83f'; } /* '' */
+.icon-research_institutec:before { content: '\e840'; } /* '' */
+.icon-research_instituted:before { content: '\e841'; } /* '' */
+.icon-researcher:before { content: '\e842'; } /* '' */
+.icon-senior_care_a:before { content: '\e843'; } /* '' */
+.icon-seniorcare:before { content: '\e844'; } /* '' */
+.icon-seniorcarec:before { content: '\e845'; } /* '' */
+.icon-seniorcared:before { content: '\e846'; } /* '' */
+.icon-symposium2:before { content: '\e847'; } /* '' */
+.icon-thinktank:before { content: '\e848'; } /* '' */
+.icon-thinktank_a:before { content: '\e849'; } /* '' */
+.icon-thinktankc:before { content: '\e84a'; } /* '' */
+.icon-thinktankd:before { content: '\e84b'; } /* '' */
+.icon-univc:before { content: '\e84c'; } /* '' */
+.icon-univd:before { content: '\e84d'; } /* '' */
+.icon-university_a:before { content: '\e84e'; } /* '' */
+.icon-university_big:before { content: '\e84f'; } /* '' */
+.icon-wholesaler:before { content: '\e850'; } /* '' */
+.icon-wholesaler_a:before { content: '\e851'; } /* '' */
+.icon-wholesalerc:before { content: '\e852'; } /* '' */
+.icon-wholesalerd:before { content: '\e853'; } /* '' */
+.icon-access_body_c:before { content: '\e854'; } /* '' */
+.icon-access_body_d:before { content: '\e855'; } /* '' */
+.icon-access_body2:before { content: '\e856'; } /* '' */
+.icon-access_bodya:before { content: '\e857'; } /* '' */
+.icon-association_a:before { content: '\e858'; } /* '' */
+.icon-associationc:before { content: '\e859'; } /* '' */
+.icon-associationd:before { content: '\e85a'; } /* '' */
+.icon-civil_servant:before { content: '\e85b'; } /* '' */
+.icon-clinic:before { content: '\e85c'; } /* '' */
+.icon-clinic_a:before { content: '\e85d'; } /* '' */
+.icon-clinic_c:before { content: '\e85e'; } /* '' */
+.icon-clinic_d:before { content: '\e85f'; } /* '' */
+.icon-clinical_trial:before { content: '\e860'; } /* '' */
+.icon-cme:before { content: '\e861'; } /* '' */
+.icon-committeeb:before { content: '\e862'; } /* '' */
+.icon-company_a:before { content: '\e863'; } /* '' */
+.icon-companyc:before { content: '\e864'; } /* '' */
+.icon-companyd:before { content: '\e865'; } /* '' */
+.icon-ddassg:before { content: '\e866'; } /* '' */
+.icon-executive:before { content: '\e867'; } /* '' */
+.icon-general:before { content: '\e868'; } /* '' */
+.icon-govc:before { content: '\e869'; } /* '' */
+.icon-govd:before { content: '\e86a'; } /* '' */

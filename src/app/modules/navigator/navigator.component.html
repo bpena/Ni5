@@ -1,0 +1,21 @@
+<!--<button (click)="setVisible()">open</button>-->
+<!--<ni5-dialog [(visible)]="visi" title="create node" (okEvent)="onOk($event)" (cancelEvent)="onCancel($event)"-->
+<!--(cleanEvent)="onClean($event)">-->
+<!--<ni5-node-form [(node)]="objeto"></ni5-node-form>-->
+<!--</ni5-dialog>-->
+
+<div class="row-flex flex" *ngIf="initialized" [hidden]="!(showMap || showGraph)">
+  <map-display *ngIf="initialized" [hidden]="!showMap"></map-display>
+  <div class="separator" [hidden]="!showGraph"></div>
+  <graph-display [hidden]="!(showGraph && initialized)"></graph-display>
+  <!--<ni5-panel *ngIf="showGraph && initialized"></ni5-panel>-->
+</div>
+
+<div class="separator" [hidden]="!(showMap || showGraph) || !(showList || showDetail)"></div>
+
+<div class="row-flex flex" *ngIf="initialized" [hidden]="!(showList || showDetail)">
+  <list-display *ngIf="initialized" [hidden]="!showList"></list-display>
+  <div class="separator" [hidden]="!showDetail"></div>
+  <detail-display *ngIf="initialized" [hidden]="!showDetail"></detail-display>
+  <!--<ni5-panel *ngIf="initialized" [hidden]="!showDetail"></ni5-panel>-->
+</div>

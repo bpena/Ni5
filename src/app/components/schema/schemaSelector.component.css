@@ -1,0 +1,56 @@
+.schema-selector {
+  margin-left: 35px;
+}
+
+.schema-selector .md-button-wrapper md-icon {
+  width: 15px;
+}
+
+.schema-selector .dropdown-schema {
+  background: whitesmoke !important;
+  box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0 0 15px 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.schema-selector .radio-group-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.schema-selector .dropdown-schema .title {
+  background-color: #23253c;
+  color: whitesmoke;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.schema-selector .dropdown-schema .radio {
+  color: #757575;
+  font-size: 13px;
+  padding: 2px 40px 3px 20px;
+}
+.schema-selector .radio {
+  text-align: right;
+}
+.schema-selector .radio-left {
+  display: flex;
+}
+.schema-selector .md-radio-container,
+.schema-selector .md-radio-outer-circle,
+.schema-selector .md-radio-inner-circle {
+  height: 15px;
+  width: 15px;
+  border-color: #000000
+}
+
+.schema-selector .md-radio-inner-circle {
+  background-color: #000000;
+}

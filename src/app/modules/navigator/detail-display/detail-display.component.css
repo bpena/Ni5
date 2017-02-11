@@ -1,0 +1,32 @@
+detail-display .detail-container {
+  background: white;
+  color: black;
+  flex: 1;
+  overflow: auto;
+}
+detail-display .row-detail {
+  max-height: 20px;
+  font-size: 13px;
+}
+detail-display .row-detail:first-child {
+  padding-top: 5px;
+}
+detail-display .label-detail {
+  flex: 2;
+  padding: 4px 15px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+detail-display .value-detail {
+  flex: 3;
+  border-left: 1px solid #f0f2f1;
+  padding: 4px 15px;
+  overflow: hidden;
+  line-height: 16px;
+}
+
+detail-display .row-detail:nth-child(odd) .label-detail,
+detail-display .row-detail:nth-child(odd) .value-detail {
+  background: #f2f6f9;
+}

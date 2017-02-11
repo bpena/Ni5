@@ -1,0 +1,127 @@
+grid {
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+  z-index: 5;
+}
+
+grid form {
+  display: flex;
+  flex: 1;
+  margin: 0;
+}
+
+
+grid table {
+  box-sizing: border-box;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 10;
+  padding-right: 2px;
+  border-collapse: collapse;
+  /*overflow-y: hidden;*/
+  overflow-x: scroll;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: default;
+  transition: opacity 50ms;
+  white-space: nowrap;
+  position: relative;
+}
+
+grid table tbody {
+  /*display: block;*/
+  /*height: calc(100% - 30px);*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: scroll;*/
+}
+
+grid table tr {
+  height: 30px;
+}
+
+grid table thead {
+  border-bottom: 1px solid #c9c9c9;
+}
+
+grid table thead th,
+grid table tbody td {
+  height: 25px;
+  white-space: nowrap;
+  min-width: 50px;
+  max-width: 350px;
+  padding: 0 24px 0 24px;
+  overflow: hidden;
+}
+
+grid table thead th {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+}
+
+grid table tr.even {
+  background: #ffffff;
+}
+
+grid table tr.odd {
+  background: #f2f6f9;
+}
+
+grid table tbody tr:hover {
+  background: #f2f6f9;
+}
+
+grid table .checkbox {
+  width: 20px;
+  min-width: auto;
+  padding: 0 5px 0 20px;
+}
+
+grid table .icon {
+  width: 50px;
+  min-width: auto;
+  padding: 0 15px 0 10px;
+}
+
+/* md-checkbox */
+grid .md-checkbox-input {
+  display: none;
+}
+grid .md-checkbox-inner-container {
+  height: 15px;
+  width: 15px;
+}
+grid .md-checkbox-ripple {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+grid .md-checkbox-frame {
+  border: 2px solid #7a7a7a;
+}
+grid .md-checkbox-indeterminate.md-accent .md-checkbox-background,
+grid .md-checkbox-checked.md-accent .md-checkbox-background {
+  background-color: #02569c;
+}
+grid .filtered .md-checkbox-background {
+  /*background-color: #0b8043 !important;*/
+  background-color: transparent !important;
+}
+grid .md-checkbox-checkmark-path {
+  stroke: white !important;
+}
+grid .filtered .md-checkbox-checkmark-path {
+  stroke: transparent !important;
+}

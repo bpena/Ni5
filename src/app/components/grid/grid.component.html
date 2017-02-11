@@ -1,0 +1,37 @@
+<form>
+  <table class="table-fixed">
+    <thead>
+    <tr>
+      <th *ngIf="selectionMode == 'multi'" class="checkbox" >
+        <md-checkbox [indeterminate]="isIndeterminate"
+                     (change)="onChangeSelectionAll($event)">
+        </md-checkbox>
+      </th>
+      <th *ngIf="showIcon" class="icon"></th>
+      <th *ngFor="let column of columns">{{column.label}}</th>
+    </tr>
+    </thead>
+    <!--<div>-->
+    <tbody>
+    <tr *ngFor="let node of data; let odd=odd; let even=even;"
+        [ngClass]="{ odd: odd, even: even }"
+        (mouseover)="onMouseover($event, node)">
+      <td *ngIf="selectionMode == 'multi'" class="checkbox">
+        <md-checkbox [checked]="node.isSelected" name="node.id"
+                     (change)="onChangeSelection($event, node)"
+                     [ngClass]="node.isFiltered ? 'filtered' : ''" >
+        </md-checkbox>
+
+      </td>
+      <td *ngIf="showIcon" class="icon"
+          (click)="onClicked($event, node)">
+        <i class="icon-{{node.metaphor.metaphors['Default'].iconName.toLowerCase().replace('.png', '')}}" height="24"></i>
+      </td>
+      <td *ngFor="let column of columns"
+          (click)="onClicked($event, node)"
+          [innerHTML]="node.normalizedData[column.id]"></td>
+    </tr>
+    </tbody>
+    <!--</div>-->
+  </table>
+</form>

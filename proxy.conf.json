@@ -1,0 +1,6 @@
+{
+  "/Ni3Web": {
+    "target": "http://172.17.0.3:8080",
+    "secure": false
+  }
+}
