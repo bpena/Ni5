@@ -19,3 +19,7 @@ map-display .leaflet-tooltip-bottom:before {
 map-display .filtered {
   display: none !important;
 }
+
+map-display #mapid {
+  overflow: hidden;
+}

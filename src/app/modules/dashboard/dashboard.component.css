@@ -13,7 +13,7 @@
 }
 
 .dashboard .toolbar-logo {
-  background: transparent no-repeat url(commons/images/logo.png);
+  background: transparent no-repeat url(assets/images/logo.png);
   background-position-y: center;
   -webkit-background-size: contain;
   -moz-background-size: contain;

@@ -214,7 +214,7 @@ export class NodeDataService {
 
     node.labelData = labelData;
     node.tooltipData = this.getDecodedData(node.id, "inToolTip", true);
-    node.iconName = 'commons/images/icons/' + nodeData.metaphor.metaphors["Default"].iconName.replace('.png', '.svg');
+    node.iconName = 'assets/images/icons/' + nodeData.metaphor.metaphors["Default"].iconName.replace('.png', '.svg');
     node.iconClass = 'icon-' + nodeData.metaphor.metaphors["Default"].iconName.replace('.png', '');
     node.iconCode = this.nodeService.getImage(nodeData.metaphor.metaphors["Default"].iconName);
     node.isFiltered =  nodeData.isFiltered;

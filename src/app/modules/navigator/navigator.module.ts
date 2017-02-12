@@ -19,6 +19,7 @@ import {NodeDataService} from "../../services/nodes/node-data.service";
 import {SecurityService} from "../../services/security/security.service";
 import {FilterService} from "./filter/filter.service";
 import {NavigatorService} from "./navigator.service";
+import {CandTLeafletComponent, CandTLeafletService} from "angular2.leaflet.components";
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import {NavigatorService} from "./navigator.service";
     MaterialModule.forRoot()
   ],
   declarations: [
+    CandTLeafletComponent,
     DetailDisplayComponent,
     FilterComponent,
     GraphDisplayComponent,
@@ -40,6 +42,7 @@ import {NavigatorService} from "./navigator.service";
   providers: [
     AlertService,
     BusService,
+    CandTLeafletService,
     EdgeService,
     NodeService,
     NodeDataService,

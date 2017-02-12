@@ -14,6 +14,10 @@ export class ContextMenuComponent {
 
   constructor( private elementRef: ElementRef ) { }
 
+  private onClick(item: DropdownValue): void {
+    item.method(item.param);
+  }
+
   private onChange(event: any, item: DropdownValue): void {
     // item.toggleValue = !item.toggleValue;
     item.method(item.param, item.toggleValue);

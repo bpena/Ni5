@@ -15,8 +15,7 @@ import {DashboardModule} from "./modules/dashboard/dashboard.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavigatorComponent
+    AppComponent
   ],
   imports: [
     AppRoutingModule,

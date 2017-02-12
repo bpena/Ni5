@@ -4,7 +4,7 @@ import {NodeDataService} from "../../../services/nodes/node-data.service";
 import {FilterService} from "./filter.service";
 
 @Component({
-  selector: 'app-filter',
+  selector: 'ni5-filter',
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css'],
   encapsulation: ViewEncapsulation.None

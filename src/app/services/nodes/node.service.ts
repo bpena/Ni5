@@ -119,7 +119,7 @@ export class NodeService {
       nodeToSelect.lat = (nodeData.data[latLon.lat]) ? nodeData.data[latLon.lat] : null;
       nodeToSelect.labelData = labelData;
       nodeToSelect.tooltipData = this.getDecodedData(nodeToSelect.id, "inToolTip", true);
-      nodeToSelect.iconName = 'commons/images/icons/' + nodeData.metaphor.metaphors["Default"].iconName;
+      nodeToSelect.iconName = 'assrts/images/icons/' + nodeData.metaphor.metaphors["Default"].iconName;
       nodeToSelect.iconCode = this.getImage(nodeData.metaphor.metaphors["Default"].iconName);
       nodeToSelectList.push(nodeToSelect);
     });

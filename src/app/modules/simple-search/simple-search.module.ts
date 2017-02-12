@@ -20,6 +20,7 @@ import {FormsModule} from "@angular/forms";
     NodeService,
     NodeDataService,
     SecurityService
-  ]
+  ],
+  exports: [SimpleSearchComponent]
 })
 export class SimpleSearchModule { }

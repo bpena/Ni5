@@ -5,15 +5,13 @@ import {SimpleSearchModule} from "./modules/simple-search/simple-search.module";
 
 const routes: Routes = [
   {path: '', redirectTo: 'search', pathMatch: 'full'},
-  {path: 'login', component: LoginModule},
-  {path: 'search', component: SimpleSearchModule}
+  {path: 'login', component: LoginModule}
 ];
 
 @NgModule({
   imports: [
     LoginModule,
-    RouterModule.forRoot(routes, { useHash: true }),
-    SimpleSearchModule
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   exports: [
     RouterModule

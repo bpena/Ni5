@@ -14,7 +14,10 @@ declare var L: any;
   selector: 'map-display',
   templateUrl: './map-display.component.html',
   styleUrls: ['./map-display.component.css'],
-  host: { 'class': 'column-flex'},
+  host: {
+    'class': 'column-flex',
+    'style': 'overflow: hidden'
+  },
   encapsulation: ViewEncapsulation.None
 })
 export class MapDisplayComponent implements OnInit {

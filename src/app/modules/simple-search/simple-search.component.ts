@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {UiService} from "../../services/ui.service";
 import {SchemaService} from "../../services/connection/schema.service";
@@ -7,7 +7,8 @@ import {NodeDataService} from "../../services/nodes/node-data.service";
 @Component({
   selector: 'simple-search',
   templateUrl: 'simple-search.component.html',
-  styleUrls: ['simple-search.component.css']
+  styleUrls: ['simple-search.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SimpleSearchComponent implements OnInit {
 
